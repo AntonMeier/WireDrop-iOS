@@ -185,6 +185,7 @@
 		3AD2F9792D19D0F1000AD327 /* AppManagerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManagerState.swift; sourceTree = "<group>"; };
 		3AD2F97F2D19D741000AD327 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/General.strings; sourceTree = "<group>"; };
 		3AD2F9832D19DC32000AD327 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		3AD3D63C2D1DC0010059A3F0 /* Peertalk.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Peertalk.LICENSE.txt; sourceTree = "<group>"; };
 		3ADA0FCB2BC2B0AA00E22005 /* AppDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDispatch.swift; sourceTree = "<group>"; };
 		3ADA0FCF2BC2B12600E22005 /* WDLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDLog.swift; sourceTree = "<group>"; };
 		3ADA0FD32BC4520500E22005 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
@@ -250,7 +251,6 @@
 				3AD2F9552D14A3E5000AD327 /* Tools */,
 				3AD2F9542D14A31F000AD327 /* Parsing */,
 				3A031C372BB6DCC3007B7FF0 /* USB */,
-				3A031C2F2BB6DCC3007B7FF0 /* Libs */,
 				3AD2F9532D14A2ED000AD327 /* Logging */,
 				3AD2F97D2D19D6F5000AD327 /* Localization */,
 				3A031C172BB6DC22007B7FF0 /* WireDropApp.swift */,
@@ -265,6 +265,7 @@
 		3A031C2E2BB6DCC3007B7FF0 /* Peertalk */ = {
 			isa = PBXGroup;
 			children = (
+				3AD3D63C2D1DC0010059A3F0 /* Peertalk.LICENSE.txt */,
 				3A031C262BB6DCC3007B7FF0 /* Peertalk.h */,
 				3A031C272BB6DCC3007B7FF0 /* PTChannel.h */,
 				3A031C282BB6DCC3007B7FF0 /* PTChannel.m */,
@@ -288,6 +289,7 @@
 		3A031C372BB6DCC3007B7FF0 /* USB */ = {
 			isa = PBXGroup;
 			children = (
+				3A031C2F2BB6DCC3007B7FF0 /* Libs */,
 				3A031C322BB6DCC3007B7FF0 /* USBDispatchData.h */,
 				3A031C332BB6DCC3007B7FF0 /* USBProtocol.h */,
 				3A031C342BB6DCC3007B7FF0 /* USBProtocol.m */,
