@@ -39,7 +39,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>PrincipalClassName</string>
+		<string>PrincipalClass</string>
 	</dict>
 </dict>
 </plist>

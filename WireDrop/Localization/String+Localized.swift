@@ -37,7 +37,7 @@ enum L10n {
 
         enum Label {
             static var noDeviceAttached: String { "label.no_device_attached".localized() }
-            static var cantSeeYourDevice: String { "label.cant_see_device".localized() }
+            static var cantSeeYourDevice: String { "label.cant_see_your_device".localized() }
             static var openAppOnIos: String { "label.open_app_on_ios".localized() }
             static var openAppOnMac: String { "label.open_app_on_mac".localized() }
             static var waitingForDevice: String { "label.waiting_for_device".localized() }

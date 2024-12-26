@@ -42,7 +42,7 @@ static const NSTimeInterval PTAppReconnectDelay = 2.0;
         _sendQueue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
         
         _connectionDispatch = [[RepeatingDispatch alloc] initWithDuration:PTAppReconnectDelay*1000 leeway:300 triggerHandler:^{
-            WCLog(@"\n\n\n- Connect Dispatch trigger - ");
+            WCLog(@"\n\n\nConnect Dispatch triggered");
             [self enqueueConnectToUSBDevice];
         }];
     }
@@ -85,7 +85,7 @@ static const NSTimeInterval PTAppReconnectDelay = 2.0;
     }
     else
     {
-        WCLog(@"Can not send raw data — not connected");
+        WCLog(@"Cannot send raw data — not connected");
         // If needed, dispatch data failure here
     }
 }
@@ -114,7 +114,7 @@ static const NSTimeInterval PTAppReconnectDelay = 2.0;
     }
     else
     {
-        WCLog(@"Can not send raw data — not connected");
+        WCLog(@"Cannot send raw data — not connected");
         // If needed, dispatch data failure here
     }
 }

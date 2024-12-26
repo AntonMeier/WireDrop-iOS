@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+/// Used for logging of usb connection,  data transfer,  and parser related events.
+
 #define WCLoggingActive 0
 
 #if WCLoggingActive == 1

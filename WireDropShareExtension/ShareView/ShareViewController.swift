@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: Initialization
 
-@objc(PrincipalClassName)
+@objc(PrincipalClass)
 class ShareViewController: UIViewController {
     private let appManager = AppManager.shared
 }

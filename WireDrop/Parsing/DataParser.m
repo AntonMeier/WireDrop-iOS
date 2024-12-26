@@ -109,8 +109,6 @@
 
 - (void)sendFile:(NSData *)data fileNo:(int)fileNo total:(int)total filename:(NSString *)filename completion:(void (^)(NSError *error))completion;
 {
-    // TODO: Disallow if client is .extension
-    // TODO: Investigate max segment size!
     self.fileCompletion = completion;
     self.transferState.fileId++;
     self.transferState.transceiveData = data;
@@ -129,8 +127,6 @@
         self.transferState.fragmentSize = (self.transferState.totalSize / 2) + 1;
     }
 
-    // TODO: ensure that we don't have one too many fragments...
-    
     NSData *stringBytes = [filename dataUsingEncoding:NSUTF8StringEncoding];
     uint32_t filename_len = (uint32_t)stringBytes.length;
     unsigned char requestArray[sizeof(FileStartRequest)+filename_len];
@@ -357,7 +353,7 @@
 - (void)sendData:(NSData *)data;
 {
     if (!self.isUSBConnected) {
-        WCLog(@"ERRROR: Cannot send data while USB is not connected");
+        WCLog(@"Error: Cannot send data while USB is not connected");
         return;
     }
     
@@ -417,7 +413,7 @@
         if (self.versionState.localMinVersion < self.versionState.remoteMinVersion)
         {
             WCLog(
-                  @"ERROR: Cannot allow incoming transfer request due to minimum version mismatch: (%u, %u)",
+                  @"Error: Cannot allow incoming transfer request due to minimum version mismatch: (%u, %u)",
                   self.versionState.localMinVersion, self.versionState.remoteMinVersion
                   );
             [self sendFileTransferResponseAccepted:false];
@@ -459,12 +455,9 @@
 
 - (void)handleFileStartResponse:(FileStartAck *)packet;
 {
-    // TODO: accept param
-    // TODO: add fileno to ack
     if (packet->accepted == 0)
     {
         WCLog(@"Error: Transfer was rejected");
-        // TODO: Reset state, etc...
         return;
     }
     
@@ -490,13 +483,8 @@
         self.transferState.receiveSegments = [[NSMutableArray alloc] init];
         self.transferState.filesReceived++;
         
-        // TODO: move to somewhere
         [self.delegate parser:self fileTransferWasCompleted:packet->header.fileId];
         [self.delegate parser:self receivedFile:fileData filename: self.transferState.filename];
-    }
-    else
-    {
-        // TODO: respond failed.
     }
     
     [self sendFileTransferCompletedResponse];
@@ -573,7 +561,7 @@
         if (self.versionState.localMinVersion < self.versionState.remoteMinVersion)
         {
             WCLog(
-                  @"ERROR: Cannot allow incoming transfer request due to minimum version mismatch: (%u, %u)",
+                  @"Error: Cannot allow incoming transfer request due to minimum version mismatch: (%u, %u)",
                   self.versionState.localMinVersion, self.versionState.remoteMinVersion
                   );
             [self sendBulkTransferResponseAccepted:false bulkId: packet->header.bulkId];
@@ -597,7 +585,6 @@
     if (packet->accepted == 0)
     {
         WCLog(@"Error: Bulk transfer was rejected");
-        // TODO: Reset state, etc...
         self.transferState.isBulkTransferring = false;
     }
     else
@@ -624,7 +611,6 @@
     if (self.transferState.filesReceived == self.transferState.totalFiles && !(packet->aborted))
     {
         WCLog(@"We have received all files (%u) -> finalizing bulk transfer", self.transferState.filesReceived);
-        // TODO: move to somewhere
         [self sendBulkTransferEndSuccess:true reason:0 bulkId:self.transferState.bulkId];
     }
     else
