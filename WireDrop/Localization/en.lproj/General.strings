@@ -1,0 +1,35 @@
+// General.strings
+// WireDrop
+//
+// Created by Anton Meier on 2024-12-23.
+
+/* Constants - Do not translate */
+
+"wire_drop" = "WireDrop";
+
+/* Buttons */
+
+"button.send_file" = "Send File...";
+"button.quit" = "Quit";
+"button.done" = "Done";
+
+/* Labels */
+
+"label.no_device_attached" = "No device attached";
+"label.cant_see_your_device" = "Can't see your device?";
+"label.open_app_on_ios" = "Open the WireDrop app on your iOS device and attach the cable.";
+"label.open_app_on_mac" = "Open the WireDrop app on your Mac and attach the cable.";
+"label.waiting_for_device" = "Waiting for device...";
+"label.send_copy_with" = "Send Copy with WireDrop";
+"label.devices" = "Devices";
+"label.appear_as" = "Appear as";
+"label.unknown_device" = "Unknown Device";
+"label.waiting" = "Waiting...";
+"label.sending" = "Sending";
+"label.sent" = "Sent";
+"label.receiving" = "Receiving";
+"label.received" = "Received";
+"label.failed" = "Failed";
+"label.transfer_failed" = "Transfer failed";
+"label.waiting_to_receive_files" = "Waiting to receive files...";
+"label.drop_your_files_here" = "Drop your files here...";
