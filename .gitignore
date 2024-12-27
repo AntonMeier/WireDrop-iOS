@@ -21,6 +21,7 @@ DerivedData
 *.xcscmblueprint
 node_modules
 *.xcworkspace
+*.xcscheme
 
 # Configuration
 *.xcconfig
