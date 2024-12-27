@@ -245,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				3A031C3F2BB6DCEF007B7FF0 /* AppManager.swift */,
+				3A6684622D1ED18F005B3EE8 /* UI */,
 				3AD2F94A2D1347F9000AD327 /* TransferManager */,
 				3AD2F9782D19A061000AD327 /* Models */,
 				3AD2F9562D14A457000AD327 /* Enums */,
@@ -318,10 +319,21 @@
 		3A031C6C2BB6FCD5007B7FF0 /* WireDropShareExtension */ = {
 			isa = PBXGroup;
 			children = (
-				3AD2F9572D15F6B5000AD327 /* ShareView */,
+				3A031C6D2BB6FCD5007B7FF0 /* ShareViewController.swift */,
 				3A031C722BB6FCD5007B7FF0 /* Info.plist */,
 			);
 			path = WireDropShareExtension;
+			sourceTree = "<group>";
+		};
+		3A6684622D1ED18F005B3EE8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2F9582D15F6C0000AD327 /* Views */,
+				3A031C812BB7556A007B7FF0 /* ShareView.swift */,
+				3AD2F93E2D0F3BD3000AD327 /* ShareViewModel.swift */,
+				3AD2F9422D0F5A9B000AD327 /* ShareViewState.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		3AA0F8AF2D1C75BA006064F3 /* Configuration */ = {
@@ -386,18 +398,6 @@
 				3A5617B42BCBD3A500F3A046 /* Colors.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		3AD2F9572D15F6B5000AD327 /* ShareView */ = {
-			isa = PBXGroup;
-			children = (
-				3AD2F9582D15F6C0000AD327 /* Views */,
-				3A031C6D2BB6FCD5007B7FF0 /* ShareViewController.swift */,
-				3A031C812BB7556A007B7FF0 /* ShareView.swift */,
-				3AD2F93E2D0F3BD3000AD327 /* ShareViewModel.swift */,
-				3AD2F9422D0F5A9B000AD327 /* ShareViewState.swift */,
-			);
-			path = ShareView;
 			sourceTree = "<group>";
 		};
 		3AD2F9582D15F6C0000AD327 /* Views */ = {
