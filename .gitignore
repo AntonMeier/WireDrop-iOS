@@ -21,7 +21,7 @@ DerivedData
 *.xcscmblueprint
 node_modules
 *.xcworkspace
-WireDrop.xcscheme
+*.xcscheme
 
 # Configuration
 *.xcconfig
