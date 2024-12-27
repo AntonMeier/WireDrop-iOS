@@ -46,9 +46,16 @@ If you want to install and run the code from source, the setup is fairly straigh
 
 4. You can now open the `WireDrop.xcodeproj` Xcode project file. If the config files have been added correctly, you should be able to build the WireDrop target without errors.
 
+_For the macOS app, I am using a Developer ID Application profile, but this may or may not be suitable for your needs._
+
 # Contributing To WireDrop :construction_worker:
 
-Currently, there is no list of specific features in need of development, but you are welcome to fix bugs, improve documentation, suggest new features, report issues, or even create updated image assets. Any help is appreciated.
+Currently, there is no list of specific features in need of development, but you are welcome contribute contribute if you come up with something useful. This could be to improve documentation, suggest new features, report issues, fix bugs, or even create design assets.
+
+# License :mag_right:
+
+The source code for WireDrop is released under the GNU General Public License V3 (GPLv3) License, as outlined in [LICENSE](LICENSE).
+Please contact me if you are unsure of the implications of this, or if you have other specific licensing requests.
 
 # Questions :question:
 
