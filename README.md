@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/badge/license-GPLv3-green)](#LICENSE)
-![iTunes App Store](https://img.shields.io/itunes/v/6480213232?label=App%20Store&color=038BFD)
+[![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE)
+[![App Store](https://img.shields.io/itunes/v/6480213232?label=App%20Store&color=038BFD)](https://apps.apple.com/us/app/wiredrop/id6480213232)
 
 <div align="center">
 
@@ -59,6 +59,8 @@ Currently, there is no list of specific features in need of development, but you
 
 The source code for WireDrop is released under the GNU General Public License V3 (GPLv3) License, as outlined in [LICENSE](LICENSE).
 Please contact me if you are unsure of the implications of this, or if you have other specific licensing requests.
+
+The marketing name "WireDrop", along with the WireDrop icon, is copyright of Anton Meier.
 
 # Questions :question:
 
