@@ -117,7 +117,7 @@
     self.transferState.fileId = total;
     self.transferState.fragmentSize = 1000000;
     self.transferState.totalSize = (unsigned int)data.length;
-    self.transferState.totalFragments = self.transferState.totalSize / self.transferState.fragmentSize + (self.transferState.totalSize % self.transferState.fragmentSize != 0);//(uint8_t)ceil(ts/fs);
+    self.transferState.totalFragments = self.transferState.totalSize / self.transferState.fragmentSize + (self.transferState.totalSize % self.transferState.fragmentSize != 0);
     self.transferState.currentFragment = 0;
     self.transferState.fileNo = fileNo;
     
