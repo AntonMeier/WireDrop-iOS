@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/license-GPLv3-green)](#LICENSE)
+![iTunes App Store](https://img.shields.io/itunes/v/6480213232?label=App%20Store&color=038BFD)
+
 <div align="center">
 
 <picture>
@@ -22,7 +25,7 @@
 
 # About ℹ️
 
-WireDrop lets you transfer files between your iOS and macOS devices via USB cable. This can be useful in situations where other means of transferring files is not possible, such as, if you have WiFi or Bluetooth disabled.
+WireDrop lets you transfer files between your iOS and macOS devices via USB cable. This can be useful in situations where other means of transferring files (ex AirDrop) is not possible, such as, if you have WiFi or Bluetooth disabled.
 
 **System requirements**
 * iOS device running iOS 16.0 or later.
@@ -50,7 +53,7 @@ _For the macOS app, I am using a Developer ID Application profile, but this may 
 
 # Contributing To WireDrop :construction_worker:
 
-Currently, there is no list of specific features in need of development, but you are welcome contribute contribute if you come up with something useful. This could be to improve documentation, suggest new features, report issues, fix bugs, or even create design assets.
+Currently, there is no list of specific features in need of development, but you are welcome contribute if you come up with something useful. This could be to improve documentation, suggest new features, report issues, fix bugs, or even create design assets.
 
 # License :mag_right:
 
