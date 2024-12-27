@@ -43,13 +43,13 @@ If you want to install and run the code from source, the setup is fairly straigh
 
 1. Clone the repository
 2. In the project's root, create a new folder `/Configuration`
-3. In this new folder, create 3 new files: `project-ios-app.xcconfig`, `project-macos-app.xcconfig`, and `project-ios-extension.xcconfig`. These files will contain your personal configuration details for each Xcode target, such as `PRODUCT_BUNDLE_IDENTIFIER`, `DEVELOPMENT_TEAM`. Templates for each file can be fouund <ins>here (TODO: insert link)</ins>.
+3. In this new folder, create 3 new files: `project-ios-app.xcconfig`, `project-macos-app.xcconfig`, and `project-ios-extension.xcconfig`. These files will contain your personal configuration details for each Xcode target, such as `PRODUCT_BUNDLE_IDENTIFIER`, `DEVELOPMENT_TEAM`. Templates for each file can be found under [Configuration FIle Templates](https://github.com/AntonMeier/WireDrop-iOS/wiki/Configuration-FIle-Templates).
 
 ![XCConfig](https://github.com/user-attachments/assets/a0cb5d8c-d4c8-4e0d-babd-607419313547)
 
 4. You can now open the `WireDrop.xcodeproj` Xcode project file. If the config files have been added correctly, you should be able to build the WireDrop target without errors.
 
-_For the macOS app, I am using a Developer ID Application profile, but this may or may not be suitable for your needs._
+_For the macOS app, I am using a Developer ID Application profile, but this may or may not be suitable for your needs. If you only wish to build the iOS targets, you can ignore the configuration file for macOS._
 
 # Contributing To WireDrop :construction_worker:
 
