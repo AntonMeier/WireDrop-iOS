@@ -33,7 +33,7 @@ WireDrop lets you transfer files between your iOS and macOS devices via USB cabl
 
 **Usage**
 * **iOS to macOS**: WireDrop will appear as a share option inside the regular iOS share sheet. As long as you have the USB cable attached, and the WireDrop companion app running on your Mac, you will be able to quickly transfer files.
-* **macOS to iOS**: First, open the WireDrop app on your iOS device, then drag-and-drop your files to the WireDrop main window on the Mac app. Once all files are transferred, a share sheet will appear on the iOS app, allowing you to choose where to save the files.
+* **macOS to iOS**: Open the WireDrop app on your iOS device. On your Mac, you can now drag-and-drop your files to the WireDrop main window to start the transfer. Once all files are transferred, a share sheet will appear in the iOS app, allowing you to choose where to save the files.
 
 # Getting Started :memo:
 
@@ -60,7 +60,7 @@ Currently, there is no list of specific features in need of development, but you
 The source code for WireDrop is released under the GNU General Public License V3 (GPLv3) License, as outlined in [LICENSE](LICENSE).
 Please contact me if you are unsure of the implications of this, or if you have other specific licensing requests.
 
-The marketing name "WireDrop", along with the WireDrop icon, is copyright of Anton Meier.
+The marketing name "WireDrop", along with the WireDrop icon, is not covered by GPLv3.
 
 # Questions :question:
 
